@@ -58,3 +58,37 @@ realm.beginTransaction()  // 트랜잭션 시작
 
 realm.commitTransaction()  // 트랜잭션 종료
 ```
+
+## 어댑터 작성
+Realm을 사용할 때는 Realm에서 제공하는 RealmBaseAdapter 클래스 상속받는다
+
+모듈수준의 gradle파일에 추가
+```
+dependencies {
+    implementation 'io.realm:android-adapters:3.1.0'
+}
+```
+
+File - New - Kotlin File/Class로 새로운 클래스 생성후 RealmBaseAdapter상속
+```
+class TodoListAdapter(realmResult: OrderedRealmCollection<Todo>)
+    : RealmBaseAdapter<Todo>(realmResult) {
+}
+```
+RealmBaseAdapter는 미구현 클래스이므로 (Alt+Enter)fh Implement members를 클릭하여 미구현 메서드 구현한다   
+getView() 메서드 선택
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
