@@ -76,7 +76,9 @@ class TodoListAdapter(realmResult: OrderedRealmCollection<Todo>)
 }
 ```
 RealmBaseAdapter는 미구현 클래스이므로 (Alt+Enter)fh Implement members를 클릭하여 미구현 메서드 구현한다   
-getView() 메서드 선택
+getView() 메서드 선택 (getView() 메서드 오버라이드)
+
+
 
 
 
